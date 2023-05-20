@@ -2,7 +2,7 @@ export function Header() {
   return (
     <div>
       <header>
-        <nav>
+        <nav className="m-3">
           <ul className="nav justify-content-center">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
