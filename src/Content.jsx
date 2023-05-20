@@ -1,12 +1,14 @@
 import { BookIndex } from "./BookIndex";
+import { Routes, Route } from "react-router-dom";
 
 export function Content() {
   return (
     <>
-    <div className="container-fluid">
-      <h1>Welcome to The Book Manager</h1>
-      <BookIndex />
-    </div>
+      <div className="container-fluid">
+        <Routes>
+          <Route path="/bookindex" element={<BookIndex />} />
+        </Routes>
+      </div>
     </>
   );
 }
