@@ -5,7 +5,7 @@ export function Header() {
         <nav className="m-3">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link active" aria-current="page" href="/home">
                 Home
               </a>
             </li>
