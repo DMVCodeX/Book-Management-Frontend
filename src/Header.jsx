@@ -1,7 +1,30 @@
 export function Header() {
   return (
     <div>
-      <header>Header</header>
+      <header>
+        <nav>
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Browse Books
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Link
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 }
