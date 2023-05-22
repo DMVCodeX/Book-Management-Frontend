@@ -12,7 +12,7 @@ export function FindBook() {
         <label className="form-label">Publication Year</label>
         <input className="form-control" name="publicationYear" type="text" />
 
-        <button className="btn btn-outline-info m-3" type="submit">
+        <button className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto" type="submit">
           {" "}
           Search{" "}
         </button>

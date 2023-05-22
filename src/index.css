@@ -6,3 +6,7 @@
 .a {
   color: #0dcaf0 !important;
 }
+
+button:hover {
+  color: white !important;
+}
