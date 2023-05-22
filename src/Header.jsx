@@ -5,22 +5,22 @@ export function Header() {
         <nav className="m-3">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/home">
+              <a className="nav-link active a " aria-current="page" href="/home">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/bookindex">
+              <a className="nav-link a " href="/bookindex">
                 Browse Books
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/findbook">
+              <a className="nav-link a " href="/findbook">
                 Find a Book
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <a className="nav-link a">Pending Assignment</a>
             </li>
           </ul>
         </nav>
