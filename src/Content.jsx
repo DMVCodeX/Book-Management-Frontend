@@ -6,7 +6,7 @@ import { FindBook } from "./FindBook";
 export function Content() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="">
         <Routes>
           <Route path="/booklist" element={<BookList />} />
           <Route path="/findbook" element={<FindBook />} />
