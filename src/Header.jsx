@@ -10,7 +10,7 @@ export function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link a " href="/bookindex">
+              <a className="nav-link a " href="/booklist">
                 Browse Books
               </a>
             </li>

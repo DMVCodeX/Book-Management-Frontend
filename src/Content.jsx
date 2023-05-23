@@ -8,7 +8,7 @@ export function Content() {
     <>
       <div className="container-fluid">
         <Routes>
-          <Route path="/bookindex" element={<BookList />} />
+          <Route path="/booklist" element={<BookList />} />
           <Route path="/findbook" element={<FindBook />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />
