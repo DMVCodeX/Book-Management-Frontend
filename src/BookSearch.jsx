@@ -2,7 +2,6 @@ import { GET_BOOK } from "./Queries";
 import { useLazyQuery } from "@apollo/client";
 import { useState } from "react";
 
-// eslint-disable-next-line react/prop-types
 export function BookSearch() {
   const [searchTerm, setSearchTerm] = useState("");
   const [getBook, { loading, error, data }] = useLazyQuery(GET_BOOK);
@@ -40,9 +39,9 @@ export function BookSearch() {
       </button>
       {book ? (
         <>
-          <h3>Title: {book.title}</h3>
-          <img src={book.image} alt="" />
-          <h4>Author: {book.author}</h4>
+          <h3 className="m-3">Title: {book.title}</h3>
+          <img className="" id="book-img" src={book.image} alt="" />
+          <h4 className="mt-3">Author: {book.author}</h4>
           <p>Publication Year: {book.publicationYear}</p>
           <p>Created At: {book.createdAt}</p>
           <p>Updated At: {book.updatedAt}</p>

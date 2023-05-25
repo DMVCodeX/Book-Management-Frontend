@@ -1,8 +1,13 @@
-import { ALL_BOOKS } from "./Queries";
-import { useQuery } from "@apollo/client";
+import { ALL_BOOKS, DELETE_BOOK } from "./Queries";
+import { useQuery, useMutation } from "@apollo/client";
 
 export function BookList() {
   const { loading, error, data } = useQuery(ALL_BOOKS);
+  const [deleteBook] = useMutation(DELETE_BOOK, { refetchQueries: [{ query: ALL_BOOKS }] });
+
+  const handleDeleteBook = (id) => {
+    deleteBook({ variables: { id: parseInt(id) } });
+  };
 
   if (loading)
     return (
@@ -34,6 +39,7 @@ export function BookList() {
               Update {book.title}{" "}
             </button>
             <button
+              onClick={() => handleDeleteBook(book.id)}
               type="button"
               value={book.id}
               className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto"
