@@ -24,11 +24,11 @@ export function BookSearch() {
 
   return (
     <div>
-      <h1 className="m-3">Search for a Book</h1>
+      <h1 className="m-5">Search for a Book</h1>
 
       <div>
         <input
-          className="form-control"
+          className="form-control m-3"
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
