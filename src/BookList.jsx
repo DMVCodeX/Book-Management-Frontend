@@ -31,21 +31,13 @@ export function BookList() {
             <p>{book.publicationYear}</p>
 
             <button
-              type="button"
-              value={book.id}
-              className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto"
-            >
-              {" "}
-              Update {book.title}{" "}
-            </button>
-            <button
               onClick={() => handleDeleteBook(book.id)}
               type="button"
               value={book.id}
               className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto"
             >
               {" "}
-              Delete{" "}
+              Delete {book.title}{" "}
             </button>
           </div>
         ))}

@@ -42,16 +42,40 @@ export function AddBook() {
       <h1 className="m-5">Add a Book</h1>
       <form className="form-control" onSubmit={handleSubmit}>
         <label className="form-label">Title</label>
-        <input className="form-control" name="title" type="text" onChange={handleInputChange} />
+        <input
+          placeholder="Enter new book Title"
+          className="form-control"
+          name="title"
+          type="text"
+          onChange={handleInputChange}
+        />
         <br />
         <label className="form-label">Author</label>
-        <input className="form-control" name="author" type="text" onChange={handleInputChange} />
+        <input
+          placeholder="Enter new book Author"
+          className="form-control"
+          name="author"
+          type="text"
+          onChange={handleInputChange}
+        />
         <br />
         <label className="form-label">Publication Year</label>
-        <input className="form-control" name="publicationYear" type="number" onChange={handleInputChange} />
+        <input
+          placeholder="Enter new book Publication Year ex: 2023"
+          className="form-control"
+          name="publicationYear"
+          type="number"
+          onChange={handleInputChange}
+        />
         <br />
         <label className="form-label">Image URL</label>
-        <input className="form-control" name="image" type="text" onChange={handleInputChange} />
+        <input
+          placeholder="Enter new book image url by right clicking on the desired online image and select copy image address"
+          className="form-control"
+          name="image"
+          type="text"
+          onChange={handleInputChange}
+        />
         <br />
 
         <button className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto" type="submit">
