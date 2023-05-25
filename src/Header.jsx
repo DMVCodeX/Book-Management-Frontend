@@ -15,6 +15,11 @@ export function Header() {
               </a>
             </li>
             <li className="nav-item">
+              <a className="nav-link active a " aria-current="page" href="/booksearch">
+                <button className="btn btn-outline-info  m-1">Find a Book</button>
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link a " href="/addbook">
                 <button className="btn btn-outline-info  m-1">Add a Book</button>
               </a>

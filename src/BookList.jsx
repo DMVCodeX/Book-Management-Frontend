@@ -1,6 +1,5 @@
 import { ALL_BOOKS } from "./Queries";
 import { useQuery } from "@apollo/client";
-// import BookDetails from "./BookDetails";
 
 export function BookList() {
   const { loading, error, data } = useQuery(ALL_BOOKS);
@@ -42,7 +41,6 @@ export function BookList() {
               {" "}
               Delete{" "}
             </button>
-            {/* <BookDetails bookId={book.id} /> */}
           </div>
         ))}
       </div>
