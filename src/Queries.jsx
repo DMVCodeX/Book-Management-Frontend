@@ -29,8 +29,8 @@ export const GET_BOOK = gql`
 `;
 
 export const CREATE_BOOK = gql`
-  mutation CreateBook($title: String!, $author: String!, $publicationYear: Int!, $image: String) {
-    createBook(title: $title, author: $author, publicationYear: $publicationYear, image: $image) {
+  mutation CreateBook($title: String!, $publicationYear: Int!, $author: String!, $image: String) {
+    createBook(title: $title, publicationYear: $publicationYear, author: $author, image: $image) {
       id
       title
       author

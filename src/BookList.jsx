@@ -1,5 +1,6 @@
 import { ALL_BOOKS } from "./Queries";
 import { useQuery } from "@apollo/client";
+// import BookDetails from "./BookDetails";
 
 export function BookList() {
   const { loading, error, data } = useQuery(ALL_BOOKS);
@@ -15,6 +16,7 @@ export function BookList() {
 
   return (
     <>
+      {console.log(data)}
       <h1 className="m-5">Book Collection</h1>
       <div className="" id="book-index">
         {data.books.map((book) => (
@@ -30,8 +32,17 @@ export function BookList() {
               className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto"
             >
               {" "}
-              Open {book.title}{" "}
+              Update {book.title}{" "}
             </button>
+            <button
+              type="button"
+              value={book.id}
+              className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto"
+            >
+              {" "}
+              Delete{" "}
+            </button>
+            {/* <BookDetails bookId={book.id} /> */}
           </div>
         ))}
       </div>
