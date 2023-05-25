@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./Home";
 import { AddBook } from "./AddBook";
 import { BookSearch } from "./BookSearch";
+import UpdateBook from "./UpdateBook";
 
 export function Content() {
   return (
@@ -14,6 +15,7 @@ export function Content() {
           <Route path="/addbook" element={<AddBook />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />
+          <Route path="/updatebook" element={<UpdateBook />} />
         </Routes>
       </div>
     </>

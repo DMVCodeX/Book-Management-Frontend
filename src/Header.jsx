@@ -24,6 +24,11 @@ export function Header() {
                 <button className="btn btn-outline-info  m-1">Add a Book</button>
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link a " href="/updatebook">
+                <button className="btn btn-outline-info  m-1">Update Book</button>
+              </a>
+            </li>
           </ul>
         </nav>
       </header>

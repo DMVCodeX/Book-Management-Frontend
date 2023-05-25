@@ -25,16 +25,18 @@ export function BookList() {
       <div className="" id="book-index">
         {data.books.map((book) => (
           <div className="" key={book.id}>
-            <h3 className="m-5">{book.title}</h3>
-            <img id="book-img" src={book.image} alt="" />
+            <h3 className="m-3">{book.title}</h3>
+            Book ID: {book.id}
+            <img className="mt-3" id="book-img" src={book.image} alt="" />
             <p className="mt-3">{book.author}</p>
             <p>{book.publicationYear}</p>
-
+            <p>Created At: {book.createdAt}</p>
+            <p>Updated At: {book.updatedAt}</p>
             <button
               onClick={() => handleDeleteBook(book.id)}
               type="button"
               value={book.id}
-              className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto"
+              className="btn btn-outline-info btn-lg m-3 d-grid gap-2 col-6 mx-auto mb-5"
             >
               {" "}
               Delete {book.title}{" "}

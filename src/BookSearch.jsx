@@ -39,8 +39,9 @@ export function BookSearch() {
       </button>
       {book ? (
         <>
-          <h3 className="m-3">Title: {book.title}</h3>
-          <img className="" id="book-img" src={book.image} alt="" />
+          <h1 className="m-3">{book.title}</h1>
+          Book ID: {book.id}
+          <img className="mt-3" id="book-img" src={book.image} alt="" />
           <h4 className="mt-3">Author: {book.author}</h4>
           <p>Publication Year: {book.publicationYear}</p>
           <p>Created At: {book.createdAt}</p>
